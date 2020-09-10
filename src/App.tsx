@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import('antd/dist/antd.less');
-import { Input } from 'antd';
+import 'antd/dist/antd.less';
+import { Button } from 'antd';
+import * as nt from '@narrative/core';
+/** @jsx jsx */
+const jsx = nt.bind(React.createElement, { Fragment });
+import { show } from '@narrative/control-statement';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,9 +16,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
-        <Input style={{ width: 200 }} />
         <p>
-          <button onClick={() => setCount((count) => count + 1)}>count is: {count}</button>
+          <Button {...show(count < 10)} onClick={() => setCount((count) => count + 1)}>
+            count is: {count}
+          </Button>
         </p>
         <p>
           Edit <code>App.jsx</code> and save to test HMR updates.

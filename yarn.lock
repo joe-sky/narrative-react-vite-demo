@@ -230,6 +230,16 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@narrative/control-statement@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@narrative/control-statement/-/control-statement-0.3.3.tgz#204eec1f09ed56df0c3b187c1fb832538409c5b2"
+  integrity sha512-+emqgGxIuZhLGkkZUrgDRRNP8yNdwgDuYnCyC+LXz7/8EFuO/Yb+9DCp5x6lhjey1fO74V6NKY8z853SBpadhg==
+
+"@narrative/core@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@narrative/core/-/core-0.3.3.tgz#187e85ef7615fa57935b1a134f700e69eed0f96b"
+  integrity sha512-l9vPCasigXBg3NLjA8tSM2vDKvbD5zEBJx4O/LdE0uvRo3slMzF8BoLuMGW7qakNq7etcyex+Z5MCK0SzGqZHA==
+
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.3.tgz#3a582bdb53804c6ba6d146579c46e52130cf4a3b"

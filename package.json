@@ -6,6 +6,8 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@narrative/control-statement": "^0.3.3",
+    "@narrative/core": "^0.3.3",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "antd": "^4.6.3"
