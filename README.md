@@ -1,7 +1,23 @@
-# narrative-react-vite-starter
+# narrative-react-vite-demo
 
-## To Do
+## Getting Started
 
-- [x] less
-- [x] antd
-- [ ] React.Suspense
+```bash
+yarn
+```
+
+### Start Dev Server
+
+```bash
+yarn dev
+```
+
+### Production Build
+
+```bash
+yarn build
+```
+
+## Live Demo
+
+https://joe-sky.github.io/narrative-react-vite-demo
