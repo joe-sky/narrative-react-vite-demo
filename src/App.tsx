@@ -22,11 +22,11 @@ function App() {
         <p>
           Edit <code>App.jsx</code> and{' '}
           <For of={['save', 'to', 'test', 'HMR', 'updates']}>
-            {(item, { isLast }) => (
-              <>
+            {(item, { index, isLast }) => (
+              <Fragment key={index}>
                 {item}
                 <If condition={!isLast}> </If>
-              </>
+              </Fragment>
             )}
           </For>
           .
