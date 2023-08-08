@@ -1,10 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import * as nt from '@narrative/core';
-/** @jsx jsx */
-const jsx = nt.bind(React.createElement, { Fragment });
-import { If, For, show } from '@narrative/control-statement';
+import { If, For } from '@narrative/control-flow';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,17 +12,17 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React + Narrative!</p>
         <p>
-          <button {...show(count < 10)} onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+          <If when={count < 10}>
+            <button onClick={() => setCount((count) => count + 1)}>count is: {count}</button>
+          </If>
         </p>
         <p>
           Edit <code>App.jsx</code> and{' '}
           <For of={['save', 'to', 'test', 'HMR', 'updates']}>
-            {(item, { index, isLast }) => (
+            {(item, { index }, arr) => (
               <Fragment key={index}>
                 {item}
-                <If condition={!isLast}> </If>
+                <If when={index < arr.length - 1}> </If>
               </Fragment>
             )}
           </For>

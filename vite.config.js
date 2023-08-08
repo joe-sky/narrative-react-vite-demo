@@ -1,25 +1,16 @@
-// @ts-check
-const reactPlugin = require('vite-plugin-react');
-const babel = require('rollup-plugin-babel');
+/// <reference types="vite/client" />
 
-const isProd = process.env.VITE_ENV === 'production';
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
-/**
- * @type { import('vite').UserConfig }
- */
-const config = {
-  jsx: 'react',
-  plugins: [reactPlugin],
-  rollupInputOptions: {
-    plugins: [
-      babel({
-        babelrc: false,
-        presets: ['@babel/preset-react'],
-        plugins: ['@narrative/compiler'],
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      })
-    ]
-  }
-};
-
-module.exports = config;
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    react({
+      jsxRuntime: 'classic',
+      babel: {
+        plugins: ['@narrative/compiler']
+      }
+    })
+  ]
+});
