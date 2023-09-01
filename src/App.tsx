@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { If, For } from '@narrative/control-flow';

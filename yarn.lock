@@ -409,18 +409,18 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@narrative/babel-plugin-compiler@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@narrative/babel-plugin-compiler/-/babel-plugin-compiler-1.0.1.tgz#836df3bb02e7e7608beae3ce0bffc589b475f808"
-  integrity sha512-B8LXaRcst9PgJ4g9IoN/TYE/TaIrcisKFSQsfmeif77sxlSJLU4ieCbyQv0bF6vxNkHwF867qARsDt3iKTKDGw==
+"@narrative/babel-plugin-compiler@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@narrative/babel-plugin-compiler/-/babel-plugin-compiler-1.1.0.tgz#59902285b440000c3544d6bcc4454f65ef007d64"
+  integrity sha512-mzz3Kk2Mn7XHC3yuYUbrlZlin3Lx3+IWX8xEnOjz6CEzxu0YLfSn6TWQ3usAb2wE9tNf5TL+niOusCeJg2tZKg==
   dependencies:
     "@babel/core" "^7.7.5"
     "@babel/plugin-syntax-jsx" "^7.7.5"
 
-"@narrative/control-flow@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@narrative/control-flow/-/control-flow-1.0.0.tgz#d2086d72cde6e51e7a7b66b1ced8e4b617b6136b"
-  integrity sha512-nRS7OObejLgdCRMj2v0YS/q6RSUnAGdUmgZjFeZBCuB7Q4EXEMITqyznFFjeeXgLl051OL/13/KDoD+sqANXqw==
+"@narrative/control-flow@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@narrative/control-flow/-/control-flow-1.1.0.tgz#861f3160a7940447fd09c79972e61e1af6026791"
+  integrity sha512-VPZDe2DqdhR/FErDGuKLvgablshmtf9GJq2xLKSisH5sl74FBfpMDM2GBwsUUGLRX0HJS0iSlaQsGp0yW1NkSQ==
 
 "@types/prop-types@*":
   version "15.7.5"
