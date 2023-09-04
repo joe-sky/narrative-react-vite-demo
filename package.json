@@ -6,6 +6,9 @@
     "build": "cross-env VITE_ENV=production vite build --base=./",
     "deploy": "gh-pages -d dist -t true"
   },
+  "description": "Running Narrative tags with Vite(use Babel compiler)",
+  "author": "Joe_Sky <hitomi_doax@sina.com>",
+  "license": "MIT",
   "dependencies": {
     "@narrative/control-flow": "^1.1.0",
     "react": "^18.1.0",

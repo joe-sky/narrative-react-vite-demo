@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { If, For } from '@narrative/control-flow';
+import { If, Else, For } from '@narrative/control-flow';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +14,7 @@ function App() {
         <p>
           <If when={count < 10}>
             <button onClick={() => setCount((count) => count + 1)}>count is: {count}</button>
+            <Else>Click more than 10 times</Else>
           </If>
         </p>
         <p>
